@@ -5,8 +5,61 @@
     <title>HTML Academy: Техномарт</title>
   </head>
   <body>
-    <header class="main-header"></header>
-    <main class="main-content"></main>
-    <footer class="main-footer"></footer>
+    <header class="main-header">
+      <a class="logo">Логотип</a>
+      <nav class="navigation">
+        <ul class="menu">
+          <li class="menu__item"><a href="#">Студия</a></li>
+          <li class="menu__item"><a href="#">Клиенты</a></li>
+          <li class="menu__item"><a href="#">Магазин</a></li>
+          <li class="menu__item"><a href="#">Контакты</a></li>
+        </ul>
+      </nav>
+      <ul class="basket-user">
+        <li class="basket-user_item"><a href="#">Корзина</a></li>
+      </ul>
+    </header>
+    <main class="main-content">
+      <section class="slider"></section>
+      <section class="services"></section>
+      <section class="advantages"></section>
+    </main>
+    <footer class="main-footer">
+      <div class="contacts">
+        <img class="contacts__map" alt="Адрес студии на карте">
+        <div class="contacts__info">
+          <h2 class="contacts__header">NЁRDS DESIGN STUDIO</h2>
+          <p class="contacts__address">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+          <p class="contacts__phone">тел. +7(812)257-75-75</p>
+          <button class="contacts__submit" type="submit">Напишите нам</button>
+        </div>
+        <div class="contacts__social">
+          <ul class="contacts__social-list">
+            <li class="contacts__social-list-item"><a class="vk" href="#"></a></li>
+            <li class="contacts__social-list-item"><a class="fb" href="#"></a></li>
+            <li class="contacts__social-list-item"><a class="instagram" href="#"></a></li>
+          </ul>
+          <div class="contacts__slogan">
+            <p class="contacts__slogan-header">Давайте дружить, это выгодно!</p>
+            <p class="contacts__slogan-description">Скидка 10% для друзей из социальных сетей.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
+
+<!--
+Вопросы по шапке:
+1. Нужно ли задавать имена классов по БЭМ, если такие элементы однородные. Например в списке меню. А во вложенных ссылках?
+   Задавать им одинаковые имена или разные?
+2. Почему корзину нужно размечать списком? Там потом добавится еще елементы?
+3. Как размечать элементы внутри крупных блоков? Например тег <nav> элемент блока шапки или самостоятельных блок?
+   Логотип, это самостоятельный блок или элемент блока?
+
+Вопросы по подвалу:
+1. Как в блоке "contacts" размещать блоки? У меня одтельно <img> и <div>. Или сделать картинку фоном блока?
+2.
+
+
+-->
