@@ -22,8 +22,49 @@
 <main class="main-content">
   <h1 class="main-header">Магазин готовых шаблонов</h1>
   <section class="catalog">
-    <form class="catalog-filters"></form>
-    <form class="catalog-sorting"></form>
+    <form class="catalog-filters">
+      <fieldset class="catalog-filters__price">
+        <legend class="catalog-filters__price-header">Стоимость:</legend>
+        <div class="catalog-filters__runner"></div>
+        <label class="catalog-filters__label" for="start">От</label>
+        <input class="catalog-filters__input-text" type="text" value="0" id="start">
+        <label class="catalog-filters__label" for="end">До</label>
+        <input class="catalog-filters__input-text" type="text" value="15000" id="end">
+      </fieldset>
+      <fieldset class="catalog-filters__grid">
+        <legend class="catalog-filters__grid-header">Сетка:</legend>
+        <input class="catalog-filters__input-radio" type="radio" id="adaptive">
+        <label class="catalog-filters__label" for="adaptive">Адаптивная</label>
+        <input class="catalog-filters__input-radio" type="radio" id="fix">
+        <label class="catalog-filters__label" for="fix">Фиксированная</label>
+        <input class="catalog-filters__input-radio" type="radio" id="flex">
+        <label class="catalog-filters__label" for="flex">Резиновая</label>
+      </fieldset>
+      <fieldset class="catalog-filters__features">
+        <legend class="catalog-filters__features-header">Особенности:</legend>
+        <input class="catalog-filters__input-checkbox" type="checkbox" id="slider">
+        <label class="catalog-filters__label" for="slider">Слайдер</label>
+        <input class="catalog-filters__input-checkbox" type="checkbox" id="benefits">
+        <label class="catalog-filters__label" for="benefits">Блок преимуществ</label>
+        <input class="catalog-filters__input-checkbox" type="checkbox" id="news">
+        <label class="catalog-filters__label" for="news">Новости</label>
+        <input class="catalog-filters__input-checkbox" type="checkbox" id="gallery">
+        <label class="catalog-filters__label" for="gallery">Галерея</label>
+        <input class="catalog-filters__input-checkbox" type="checkbox" id="basket">
+        <label class="catalog-filters__label" for="basket">Корзина</label>
+      </fieldset>
+      <input class="catalog-filters__submit" type="submit" value="показать">
+    </form>
+    <div class="catalog-sorting">
+      <h2 class="catalog-sorting__header">Сортировать</h2>
+      <ul class="catalog-sorting__list-parameters">
+        <li class="catalog-sorting__list-item"><a class="catalog-sorting__name" href="#">По цене</a></li>
+        <li class="catalog-sorting__list-item"><a class="catalog-sorting__type" href="#">По типу</a></li>
+        <li class="catalog-sorting__list-item"><a class="catalog-sorting__name" href="#">По названию</a></li>
+        <li class="catalog-sorting__list-item"><a class="catalog-sorting__direction-to-down" href="#"></a></li>
+        <li class="catalog-sorting__list-item"><a class="catalog-sorting__direction-to-up" href="#"></a></li>
+      </ul>
+    </div>
     <div class="catalog-content">
       <article class="card">
         <img class="card__image-site">
@@ -74,7 +115,14 @@
         </div>
       </article>
     </div>
-    <div class="catalog-breadcrumbs"></div>
+    <div class="catalog-breadcrumbs">
+      <ul class="catalog-breadcrumbs__list">
+        <li class="catalog-breadcrumbs__list-item"><a class="catalog-breadcrumbs__first" href="#">1</a></li>
+        <li class="catalog-breadcrumbs__list-item"><a class="catalog-breadcrumbs__second" href="#">2</a></li>
+        <li class="catalog-breadcrumbs__list-item"><a class="catalog-breadcrumbs__third" href="#">3</a></li>
+        <li class="catalog-breadcrumbs__list-item"><a class="catalog-breadcrumbs__next" href="#">Следующаяп</a></li>
+      </ul>
+    </div>
   </section>
 </main>
 <footer class="main-footer">
