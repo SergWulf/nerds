@@ -8,19 +8,19 @@
 <header class="main-header">
   <a class="logo">Логотип</a>
   <nav class="navigation">
-    <ul class="menu">
-      <li class="menu__item"><a href="#">Студия</a></li>
-      <li class="menu__item"><a href="#">Клиенты</a></li>
-      <li class="menu__item"><a href="#">Магазин</a></li>
-      <li class="menu__item"><a href="#">Контакты</a></li>
+    <ul class="navigation__menu menu">
+      <li class="menu__item"><a class="menu__link" href="#">Студия</a></li>
+      <li class="menu__item"><a class="menu__link" href="#">Клиенты</a></li>
+      <li class="menu__item"><a class="menu__link" href="catalog.html">Магазин</a></li>
+      <li class="menu__item"><a class="menu__link" href="#">Контакты</a></li>
     </ul>
   </nav>
   <ul class="basket-user">
-    <li class="basket-user_item"><a href="#">Корзина</a></li>
+    <li class="basket-user__item"><a class="basket-user__link" href="#">Корзина</a></li>
   </ul>
 </header>
 <main class="main-content">
-  <h1 class="main-header">Магазин готовых шаблонов</h1>
+  <h1 class="main-content__header">Магазин готовых шаблонов</h1>
   <section class="catalog">
     <form class="catalog-filters">
       <fieldset class="catalog-filters__price">
@@ -57,12 +57,12 @@
     </form>
     <div class="catalog-sorting">
       <h2 class="catalog-sorting__header">Сортировать</h2>
-      <ul class="catalog-sorting__list-parameters">
-        <li class="catalog-sorting__list-item"><a class="catalog-sorting__name" href="#">По цене</a></li>
-        <li class="catalog-sorting__list-item"><a class="catalog-sorting__type" href="#">По типу</a></li>
-        <li class="catalog-sorting__list-item"><a class="catalog-sorting__name" href="#">По названию</a></li>
-        <li class="catalog-sorting__list-item"><a class="catalog-sorting__direction-to-down" href="#"></a></li>
-        <li class="catalog-sorting__list-item"><a class="catalog-sorting__direction-to-up" href="#"></a></li>
+      <ul class="catalog-sorting__list-parameters list-parameters">
+        <li class="list-parameters__item"><a class="list-parameters__name" href="#">По цене</a></li>
+        <li class="list-parameters__item"><a class="list-parameters__type" href="#">По типу</a></li>
+        <li class="list-parameters__item"><a class="list-parameters__name" href="#">По названию</a></li>
+        <li class="list-parameters__item"><a class="list-parameters__direction-to-down" href="#"></a></li>
+        <li class="list-parameters__item"><a class="list-parameters__direction-to-up" href="#"></a></li>
       </ul>
     </div>
     <div class="catalog-content">
@@ -116,33 +116,33 @@
       </article>
     </div>
     <div class="catalog-breadcrumbs">
-      <ul class="catalog-breadcrumbs__list">
-        <li class="catalog-breadcrumbs__list-item"><a class="catalog-breadcrumbs__first" href="#">1</a></li>
-        <li class="catalog-breadcrumbs__list-item"><a class="catalog-breadcrumbs__second" href="#">2</a></li>
-        <li class="catalog-breadcrumbs__list-item"><a class="catalog-breadcrumbs__third" href="#">3</a></li>
-        <li class="catalog-breadcrumbs__list-item"><a class="catalog-breadcrumbs__next" href="#">Следующаяп</a></li>
+      <ul class="catalog-breadcrumbs__list list-breadcrumbs">
+        <li class="list-breadcrumbs__item"><a class="list-breadcrumbs__first" href="#">1</a></li>
+        <li class="list-breadcrumbs__item"><a class="list-breadcrumbs__second" href="#">2</a></li>
+        <li class="list-breadcrumbs__item"><a class="list-breadcrumbs__third" href="#">3</a></li>
+        <li class="list-breadcrumbs__item"><a class="list-breadcrumbs__next" href="#">Следующаяп</a></li>
       </ul>
     </div>
   </section>
 </main>
 <footer class="main-footer">
   <div class="contacts">
-    <img src="#" class="contacts__map" alt="Адрес студии на карте">
-    <div class="contacts__info">
-      <h2 class="contacts__header">NЁRDS DESIGN STUDIO</h2>
-      <p class="contacts__address">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-      <p class="contacts__phone">тел. +7(812)257-75-75</p>
-      <button class="contacts__submit" type="submit">Напишите нам</button>
+    <img class="contacts__map" src="#" alt="Адрес студии на карте">
+    <div class="contacts__info info">
+      <h2 class="info__header">NЁRDS DESIGN STUDIO</h2>
+      <p class="info__address">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+      <p class="info__phone">тел. +7(812)257-75-75</p>
+      <button class="info__submit" type="submit">Напишите нам</button>
     </div>
     <div class="contacts__social">
-      <ul class="contacts__social-list">
-        <li class="contacts__social-list-item"><a class="vk" href="#"></a></li>
-        <li class="contacts__social-list-item"><a class="fb" href="#"></a></li>
-        <li class="contacts__social-list-item"><a class="instagram" href="#"></a></li>
+      <ul class="contacts__social-list social-list">
+        <li class="social-list__item"><a class="social-list__vk" href="#"></a></li>
+        <li class="social-list__item"><a class="social-list__fb" href="#"></a></li>
+        <li class="social-list__item"><a class="social-list__instagram" href="#"></a></li>
       </ul>
-      <div class="contacts__slogan">
-        <p class="contacts__slogan-header">Давайте дружить, это выгодно!</p>
-        <p class="contacts__slogan-description">Скидка 10% для друзей из социальных сетей.</p>
+      <div class="contacts__slogan slogan">
+        <p class="slogan__header">Давайте дружить, это выгодно!</p>
+        <p class="slogan__description">Скидка 10% для друзей из социальных сетей.</p>
       </div>
     </div>
   </div>
@@ -153,5 +153,6 @@
 <!--
 1. Возник вопрос по БЭМ. Если называет большой блок, например, каталог. А остальные внутренние блоки тоже называешь
    по технологии БЭМ. Но при этом, внутренние блоки никак не связаны названием с внешним. Так возможно размечать?
-2. Как оформлять в каталоге картинку: тегом <img src="#"> или фоном? Как лучше?
+   Ответ: да возможно, это будут получаться самостоятельные блоки. Которые можно вырвать из этого блока.
+2. Как оформлять в каталоге картинку: тегом <img src="#"> или фоном? Как лучше? Ответ: вопрос открыт.
 -->
