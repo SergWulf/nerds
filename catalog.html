@@ -90,7 +90,7 @@
     <div class="catalog-content">
       <article class="card">
         <img src="img/img-sedona.jpg" class="card__image-site" alt="Изображение шаблона сайта" width="360" height="576">
-        <div class="card__info">
+        <div class="card__info visually-hidden">
           <h2 class="card__header">Sedona</h2>
           <p class="card__description">Информационный сайт для туристов</p>
           <button class="card__button" type="button">9 900 руб.</button>
@@ -98,7 +98,7 @@
       </article>
       <article class="card">
         <img src="img/img-pink.jpg" class="card__image-site" alt="Изображение шаблона сайта" width="360" height="576">
-        <div class="card__info">
+        <div class="card__info visually-hidden">
           <h2 class="card__header">Pink App</h2>
           <p class="card__description">Продуктовый лендинг приложения для iOS и Android</p>
           <button class="card__button" type="button">9 900 руб.</button>
@@ -106,7 +106,7 @@
       </article>
       <article class="card">
         <img src="img/img-barbershop.jpg" class="card__image-site" alt="Изображение шаблона сайта" width="360" height="576">
-        <div class="card__info">
+        <div class="card__info visually-hidden">
           <h2 class="card__header">Barbershop</h2>
           <p class="card__description">Сайт салона красоты. Для мужчин, да.</p>
           <button class="card__button" type="button">9 900 руб.</button>
@@ -114,7 +114,7 @@
       </article>
       <article class="card">
         <img src="img/img-mishka.jpg" class="card__image-site" alt="Изображение шаблона сайта" width="360" height="576">
-        <div class="card__info">
+        <div class="card__info visually-hidden">
           <h2 class="card__header">Mishka</h2>
           <p class="card__description">Интернет-магазин вязаных игрушек</p>
           <button class="card__button" type="button">9 900 руб.</button>
@@ -122,7 +122,7 @@
       </article>
       <article class="card">
         <img src="img/img-aplus.jpg" class="card__image-site" alt="Изображение шаблона сайта" width="360" height="576">
-        <div class="card__info">
+        <div class="card__info visually-hidden">
           <h2 class="card__header">A plus</h2>
           <p class="card__description">Лендинг курсов повышения квалификации</p>
           <button class="card__button" type="button">9 900 руб.</button>
@@ -130,7 +130,7 @@
       </article>
       <article class="card">
         <img src="img/img-kvast.jpg" class="card__image-site" alt="Изображение шаблона сайта" width="360" height="576">
-        <div class="card__info">
+        <div class="card__info visually-hidden">
           <h2 class="card__header">Кваст</h2>
           <p class="card__description">Промо-сайт производителя крафтового кваса</p>
           <button class="card__button" type="button">9 900 руб.</button>
@@ -170,5 +170,17 @@
     </div>
   </div>
 </footer>
+<div class="modal-feedback visually-hidden">
+  <h2 class="modal-feedback__header">Напишите нам:</h2>
+  <form class="modal-feedback__form" name="form-feedback" method="get" action="http://echo.htmlacademy.ru">
+    <label class="modal-feedback__label" for="id-name">Ваше имя:</label>
+    <input class="modal-feedback__input-text" type="text" name="username" placeholder="Имя Фамилия" id="id-name">
+    <label class="modal-feedback__label" for="id-email">Ваш e-mail:</label>
+    <input class="modal-feedback__input-email" type="email" name="email" placeholder="email@example.com" id="id-email">
+    <label class="modal-feedback__label" for="id-textarea">Текст письма:</label>
+    <textarea class="modal-feedback__input-textarea" name="textarea" id="id-textarea" placeholder="В свободной форме"></textarea>
+    <input class="modal-feedback__submit" type="submit" name="submit" value="Отправить">
+  </form>
+</div>
 </body>
 </html>

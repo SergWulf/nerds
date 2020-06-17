@@ -24,9 +24,26 @@
     <main class="main-content">
       <section class="slider">
         <h2 class="slider__h2 visually-hidden">Слайдер сайта</h2>
-        <p class="slider__header">Долго, дорого, скурпулезно.</p>
-        <p class="slider__description">Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
-        <a class="slider__more-info">Узнать больше</a>
+        <ul class="slider__list list-slider">
+          <li class="list-slider__item">
+            <p class="list-slider__header">Долго, дорого, скурпулезно.</p>
+            <p class="list-slider__description">Математически выверенный дизайн для вашего сайта или мобильного
+              приложения.</p>
+            <a class="list-slider__more-info">Узнать больше</a>
+          </li>
+          <li class="list-slider__item visually-hidden">
+            <p class="list-slider__header">Любим математику как никто другой.</p>
+            <p class="list-slider__description">Никакого креатива, только математические формулы
+              для расчета идеальных пропорций.</p>
+            <a class="list-slider__more-info">Узнать больше</a>
+          </li>
+          <li class="list-slider__item visually-hidden">
+            <p class="list-slider__header">Только ночь, только хардкор</p>
+            <p class="list-slider__description">Работать днем, как все? Мы против этого.
+              Ближе к полуночи работа только начинается.</p>
+            <a class="list-slider__more-info">Узнать больше</a>
+          </li>
+        </ul>
       </section>
       <section class="services">
         <h2 class="services__h2 visually-hidden">Услуги компании</h2>
@@ -118,5 +135,17 @@
         </div>
       </div>
     </footer>
+  <div class="modal-feedback visually-hidden">
+    <h2 class="modal-feedback__header">Напишите нам:</h2>
+    <form class="modal-feedback__form" name="form-feedback" method="get" action="http://echo.htmlacademy.ru">
+      <label class="modal-feedback__label" for="id-name">Ваше имя:</label>
+      <input class="modal-feedback__input-text" type="text" name="username" placeholder="Имя Фамилия" id="id-name">
+      <label class="modal-feedback__label" for="id-email">Ваш e-mail:</label>
+      <input class="modal-feedback__input-email" type="email" name="email" placeholder="email@example.com" id="id-email">
+      <label class="modal-feedback__label" for="id-textarea">Текст письма:</label>
+      <textarea class="modal-feedback__input-textarea" name="textarea" id="id-textarea" placeholder="В свободной форме"></textarea>
+      <input class="modal-feedback__submit" type="submit" name="submit" value="Отправить">
+    </form>
+  </div>
   </body>
 </html>
