@@ -24,36 +24,56 @@
 <main class="main-content">
   <h1 class="main-content__header">Магазин готовых шаблонов</h1>
   <section class="catalog">
-    <form class="catalog-filters">
+    <form class="catalog-filters" name="filters" method="get" action="http://echo.htmlacademy.ru">
       <fieldset class="catalog-filters__price">
         <legend class="catalog-filters__price-header">Стоимость:</legend>
         <div class="catalog-filters__runner"></div>
         <label class="catalog-filters__label" for="start">От</label>
-        <input class="catalog-filters__input-text" type="text" value="0" id="start">
+        <input class="catalog-filters__input-text visually-hidden" type="text" value="0" id="start">
         <label class="catalog-filters__label" for="end">До</label>
-        <input class="catalog-filters__input-text" type="text" value="15000" id="end">
+        <input class="catalog-filters__input-text visually-hidden" type="text" value="15000" id="end">
       </fieldset>
       <fieldset class="catalog-filters__grid">
         <legend class="catalog-filters__grid-header">Сетка:</legend>
-        <input class="catalog-filters__input-radio" type="radio" id="adaptive">
-        <label class="catalog-filters__label" for="adaptive">Адаптивная</label>
-        <input class="catalog-filters__input-radio" type="radio" id="fix">
-        <label class="catalog-filters__label" for="fix">Фиксированная</label>
-        <input class="catalog-filters__input-radio" type="radio" id="flex">
-        <label class="catalog-filters__label" for="flex">Резиновая</label>
+        <ul class="catalog-filters__grid-list grid-list">
+          <li class="grid-list__item">
+            <input class="catalog-filters__input-radio visually-hidden" type="radio" name="grid-site" id="adaptive" value="adaptive-grid">
+            <label class="catalog-filters__label" for="adaptive">Адаптивная</label>
+          </li>
+          <li class="grid-list__item">
+            <input class="catalog-filters__input-radio visually-hidden" type="radio" name="grid-site" id="fix" value="fix-grid">
+            <label class="catalog-filters__label" for="fix">Фиксированная</label>
+          </li>
+          <li class="grid-list__item">
+            <input class="catalog-filters__input-radio visually-hidden" type="radio" name="grid-site" id="flex" value="flex-grid">
+            <label class="catalog-filters__label" for="flex">Резиновая</label>
+          </li>
+        </ul>
       </fieldset>
       <fieldset class="catalog-filters__features">
         <legend class="catalog-filters__features-header">Особенности:</legend>
-        <input class="catalog-filters__input-checkbox" type="checkbox" id="slider">
-        <label class="catalog-filters__label" for="slider">Слайдер</label>
-        <input class="catalog-filters__input-checkbox" type="checkbox" id="benefits">
-        <label class="catalog-filters__label" for="benefits">Блок преимуществ</label>
-        <input class="catalog-filters__input-checkbox" type="checkbox" id="news">
-        <label class="catalog-filters__label" for="news">Новости</label>
-        <input class="catalog-filters__input-checkbox" type="checkbox" id="gallery">
-        <label class="catalog-filters__label" for="gallery">Галерея</label>
-        <input class="catalog-filters__input-checkbox" type="checkbox" id="basket">
-        <label class="catalog-filters__label" for="basket">Корзина</label>
+        <ul>
+          <li>
+            <input class="catalog-filters__input-checkbox visually-hidden" type="checkbox" name="slider" id="id-slider" value="slider-value">
+            <label class="catalog-filters__label" for="id-slider">Слайдер</label>
+          </li>
+          <li>
+            <input class="catalog-filters__input-checkbox visually-hidden" type="checkbox" name="benefits" id="id-benefits" value="benefits-value">
+            <label class="catalog-filters__label" for="id-benefits">Блок преимуществ</label>
+          </li>
+          <li>
+            <input class="catalog-filters__input-checkbox visually-hidden" type="checkbox" name="news" id="id-news" value="news-value">
+            <label class="catalog-filters__label" for="id-news">Новости</label>
+          </li>
+          <li>
+            <input class="catalog-filters__input-checkbox visually-hidden" type="checkbox" name="gallery" id="id-gallery" value="gallery-value">
+            <label class="catalog-filters__label" for="id-gallery">Галерея</label>
+          </li>
+          <li>
+            <input class="catalog-filters__input-checkbox visually-hidden" type="checkbox" name="basket" id="id-basket" value="basket-value">
+            <label class="catalog-filters__label" for="id-basket">Корзина</label>
+          </li>
+        </ul>
       </fieldset>
       <input class="catalog-filters__submit" type="submit" value="показать">
     </form>
