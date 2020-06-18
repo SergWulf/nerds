@@ -3,6 +3,9 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Нёрдс - каталог</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
 <header class="main-header">
@@ -37,15 +40,18 @@
         <legend class="catalog-filters__grid-header">Сетка:</legend>
         <ul class="catalog-filters__grid-list grid-list">
           <li class="grid-list__item">
-            <input class="catalog-filters__input-radio visually-hidden" type="radio" name="grid-site" id="adaptive" value="adaptive-grid">
+            <input class="catalog-filters__input-radio visually-hidden" type="radio" name="grid-site" id="adaptive"
+                   value="adaptive-grid">
             <label class="catalog-filters__label" for="adaptive">Адаптивная</label>
           </li>
           <li class="grid-list__item">
-            <input class="catalog-filters__input-radio visually-hidden" type="radio" name="grid-site" id="fix" value="fix-grid">
+            <input class="catalog-filters__input-radio visually-hidden" type="radio" name="grid-site" id="fix"
+                   value="fix-grid">
             <label class="catalog-filters__label" for="fix">Фиксированная</label>
           </li>
           <li class="grid-list__item">
-            <input class="catalog-filters__input-radio visually-hidden" type="radio" name="grid-site" id="flex" value="flex-grid">
+            <input class="catalog-filters__input-radio visually-hidden" type="radio" name="grid-site" id="flex"
+                   value="flex-grid">
             <label class="catalog-filters__label" for="flex">Резиновая</label>
           </li>
         </ul>
@@ -54,23 +60,28 @@
         <legend class="catalog-filters__features-header">Особенности:</legend>
         <ul>
           <li>
-            <input class="catalog-filters__input-checkbox visually-hidden" type="checkbox" name="slider" id="id-slider" value="slider-value">
+            <input class="catalog-filters__input-checkbox visually-hidden" type="checkbox" name="slider" id="id-slider"
+                   value="slider-value">
             <label class="catalog-filters__label" for="id-slider">Слайдер</label>
           </li>
           <li>
-            <input class="catalog-filters__input-checkbox visually-hidden" type="checkbox" name="benefits" id="id-benefits" value="benefits-value">
+            <input class="catalog-filters__input-checkbox visually-hidden" type="checkbox" name="benefits"
+                   id="id-benefits" value="benefits-value">
             <label class="catalog-filters__label" for="id-benefits">Блок преимуществ</label>
           </li>
           <li>
-            <input class="catalog-filters__input-checkbox visually-hidden" type="checkbox" name="news" id="id-news" value="news-value">
+            <input class="catalog-filters__input-checkbox visually-hidden" type="checkbox" name="news" id="id-news"
+                   value="news-value">
             <label class="catalog-filters__label" for="id-news">Новости</label>
           </li>
           <li>
-            <input class="catalog-filters__input-checkbox visually-hidden" type="checkbox" name="gallery" id="id-gallery" value="gallery-value">
+            <input class="catalog-filters__input-checkbox visually-hidden" type="checkbox" name="gallery"
+                   id="id-gallery" value="gallery-value">
             <label class="catalog-filters__label" for="id-gallery">Галерея</label>
           </li>
           <li>
-            <input class="catalog-filters__input-checkbox visually-hidden" type="checkbox" name="basket" id="id-basket" value="basket-value">
+            <input class="catalog-filters__input-checkbox visually-hidden" type="checkbox" name="basket" id="id-basket"
+                   value="basket-value">
             <label class="catalog-filters__label" for="id-basket">Корзина</label>
           </li>
         </ul>
@@ -105,7 +116,8 @@
         </div>
       </article>
       <article class="card">
-        <img src="img/img-barbershop.jpg" class="card__image-site" alt="Изображение шаблона сайта" width="360" height="576">
+        <img src="img/img-barbershop.jpg" class="card__image-site" alt="Изображение шаблона сайта" width="360"
+             height="576">
         <div class="card__info visually-hidden">
           <h2 class="card__header">Barbershop</h2>
           <p class="card__description">Сайт салона красоты. Для мужчин, да.</p>
@@ -178,7 +190,8 @@
     <label class="modal-feedback__label" for="id-email">Ваш e-mail:</label>
     <input class="modal-feedback__input-email" type="email" name="email" placeholder="email@example.com" id="id-email">
     <label class="modal-feedback__label" for="id-textarea">Текст письма:</label>
-    <textarea class="modal-feedback__input-textarea" name="textarea" id="id-textarea" placeholder="В свободной форме"></textarea>
+    <textarea class="modal-feedback__input-textarea" name="textarea" id="id-textarea"
+              placeholder="В свободной форме"></textarea>
     <input class="modal-feedback__submit" type="submit" name="submit" value="Отправить">
   </form>
 </div>
