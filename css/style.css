@@ -20,7 +20,7 @@ img {
   display: block;
 }
 
-button {
+button, input[type="submit"] {
   border: none;
   outline: none;
 }
@@ -79,7 +79,7 @@ button {
   font-weight: 700;
 }
 
-.card__description {
+.card__description, .advantages__description, .list-services__item {
   color: #283136;
 }
 
@@ -88,4 +88,80 @@ button {
   color: #ffffff;
   text-transform: uppercase;
   border-radius: 2px;
+}
+
+.advantages__header {
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 500;
+}
+
+.advantages__list-header, .advantages-statistic__description {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.list-services {
+  list-style: none;
+}
+.advantages-statistic__table-th {
+  font-size: 45px;
+  line-height: 10px;
+  font-weight: 700;
+}
+
+.advantages-statistic__table-td {
+  font-size: 16px;
+  line-height: 18px;
+  color: #283136;
+}
+
+.companies-list {
+  list-style: none;
+}
+
+.info__header {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+}
+
+.info__address, .info__phone {
+  color: #666666;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.social-list {
+  list-style: none;
+}
+
+.slogan__header {
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 700;
+}
+
+.slogan__description {
+  font-size: 16px;
+  line-height: 22px;
+  color: #444444;
+}
+
+.modal-feedback__header {
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 500;
+}
+
+.modal-feedback__label {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 700;
+}
+
+input[placeholder], textarea[placeholder] {
+  font-size: 16px;
+  line-height: 18px;
+  color: #444444;
 }
