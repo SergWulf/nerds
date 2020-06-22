@@ -25,6 +25,18 @@ button, input[type="submit"] {
   outline: none;
 }
 
+ul {
+  list-style: none;
+}
+
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
 .main-header, .slider {
   background-color: #eeeeee;
 }
@@ -40,7 +52,6 @@ button, input[type="submit"] {
 .menu, .basket-user {
   line-height: 30px;
   text-transform: uppercase;
-  list-style: none;
   font-weight: 500;
 }
 
@@ -50,10 +61,6 @@ button, input[type="submit"] {
 .menu__link:active, .basket-user__link:active {
   color: #000000;
   opacity: 30%;
-}
-
-.list-slider {
-  list-style: none;
 }
 
 .list-slider__header {
@@ -101,9 +108,6 @@ button, input[type="submit"] {
   text-transform: uppercase;
 }
 
-.list-services {
-  list-style: none;
-}
 .advantages-statistic__table-th {
   font-size: 45px;
   line-height: 10px;
@@ -116,9 +120,6 @@ button, input[type="submit"] {
   color: #283136;
 }
 
-.companies-list {
-  list-style: none;
-}
 
 .info__header {
   font-size: 18px;
@@ -130,10 +131,6 @@ button, input[type="submit"] {
   color: #666666;
   font-size: 16px;
   line-height: 18px;
-}
-
-.social-list {
-  list-style: none;
 }
 
 .slogan__header {
@@ -164,4 +161,59 @@ input[placeholder], textarea[placeholder] {
   font-size: 16px;
   line-height: 18px;
   color: #444444;
+}
+
+/* Страница каталога */
+
+fieldset {
+  border: none;
+  outline: none;
+}
+
+.main-content__header {
+  font-size: 55px;
+  line-height: 55px;
+  font-weight: 500;
+}
+
+.catalog-filters__price-header, .catalog-filters__grid-header, .catalog-filters__features-header, .catalog-sorting__header {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.catalog-filters__label {
+  font-size: 16px;
+  line-height: 20px;
+  color: #283136;
+}
+
+.catalog-filters__price .catalog-filters__label {
+  line-height: 22px;
+  text-transform: uppercase;
+}
+
+.catalog-filters__price .catalog-filters__input-text {
+  border: none;
+  outline: none;
+  background-color: #eeeeee;
+  border-radius: 2px;
+}
+
+.catalog-filters__submit {
+  border: none;
+  outline: none;
+  background-color: #eeeeee;
+  color: #000000;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.list-parameters__price, .list-parameters__type, .list-parameters__name {
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
 }
