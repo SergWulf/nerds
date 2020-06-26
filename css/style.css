@@ -79,6 +79,18 @@ ul {
   background: url("../img/slide3.png") no-repeat;
 }
 
+.list-slider__more-info:hover {
+  background-color: #e74246;
+}
+
+.list-slider__more-info:active, .list-slider__more-info:focus {
+  background-color: #d7373b;
+}
+
+.list-slider__more-info-text:active, .list-slider__more-info-text:focus {
+  opacity: 30%;
+}
+
 .card__header {
   font-size: 24px;
   line-height: 30px;
