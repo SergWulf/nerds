@@ -272,3 +272,15 @@ fieldset {
   line-height: 18px;
   text-transform: uppercase;
 }
+
+.companies-list__image {
+  opacity: 20%;
+}
+
+.companies-list__image:hover {
+  opacity: 100%;
+}
+
+.companies-list__image:active {
+  opacity: 10%;
+}
