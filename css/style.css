@@ -284,3 +284,41 @@ fieldset {
 .companies-list__image:active {
   opacity: 10%;
 }
+
+.menu__item {
+  position: relative;
+}
+.menu__link_active-page::after {
+  content: "";
+  position: absolute;
+  width: 74px;
+  height: 2px;
+  top: 25px;
+  left: 0;
+  border-bottom: 2px solid #fb565a;
+}
+
+.social-list__link {
+  display: block;
+  height: 50px;
+  width: 50px;
+  background-color: #e1e1e1;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 50%;
+  box-sizing: border-box;
+}
+
+.social-list__link:hover {
+  background-color: #e74246;
+}
+
+.social-list__link:active {
+  background-color: #d7373b;
+  border-top: 2px solid #c3373b;
+}
+
+.social-list__link:active .social-list__img {
+  opacity: 30%;
+}
+
