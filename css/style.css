@@ -29,7 +29,7 @@ ul {
   list-style: none;
 }
 
-
+/*
 .visually-hidden {
   position: absolute;
   clip: rect(0 0 0 0);
@@ -37,6 +37,8 @@ ul {
   height: 1px;
   margin: -1px;
 }
+*/
+
 .main-header, .slider {
   background-color: #eeeeee;
 }
@@ -321,4 +323,57 @@ fieldset {
 .social-list__link:active .social-list__img {
   opacity: 30%;
 }
+
+.modal-feedback {
+  position: relative;
+}
+
+.modal-feedback__icon-close {
+  position: absolute;
+  background: url("../img/close-cross.svg") no-repeat 0 0;
+  height: 30px;
+  width: 30px;
+}
+
+.modal-feedback__icon-close:hover {
+  opacity: 30%;
+}
+
+.modal-feedback__icon-close:active {
+  opacity: 10%;
+}
+
+.modal-feedback__input-text, .modal-feedback__input-email, .modal-feedback__input-textarea {
+  border: 2px solid #d7dcde;
+  border-radius: 1px;
+}
+
+.modal-feedback__input-text:hover, .modal-feedback__input-email:hover, .modal-feedback__input-textarea:hover {
+  border-color: #b4b9bb;
+}
+
+.modal-feedback__input-text:focus, .modal-feedback__input-email:focus, .modal-feedback__input-textarea:focus {
+  border-color: #000000;
+}
+
+.modal-feedback__input-text:hover::placeholder, .modal-feedback__input-email:hover::placeholder, .modal-feedback__input-textarea:hover::placeholder {
+  opacity: 50%;
+}
+
+.modal-feedback__input-text::placeholder, .modal-feedback__input-email::placeholder, .modal-feedback__input-textarea::placeholder {
+  color: #444444;
+  opacity: 50%;
+}
+
+.modal-feedback__input-text:focus::placeholder, .modal-feedback__input-email:focus::placeholder, .modal-feedback__input-textarea:focus::placeholder {
+  opacity: 1;
+}
+
+.modal-feedback__input-text:invalid, .modal-feedback__input-textarea:invalid, .modal-feedback__input-email:invalid {
+  border-color: #e74246;
+  color: #e74246;
+  box-shadow: none;
+}
+
+
 
