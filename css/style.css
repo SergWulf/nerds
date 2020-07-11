@@ -453,6 +453,49 @@ input[type="radio"], input[type="checkbox"] {
   background: url("../img/checkbox-off.svg") no-repeat 0 0;
 }
 
+.list-parameters__price, .list-parameters__name, .list-parameters__type {
+  opacity: 30%;
+}
+
+.list-parameters__price:hover, .list-parameters__name:hover, .list-parameters__type:hover {
+  opacity: 60%;
+}
+
+.list-parameters__price:active, .list-parameters__name:active, .list-parameters__type:active{
+  opacity: 100%;
+}
+
+.list-parameters_active-item {
+  opacity: 100%;
+}
+
+.list-parameters__direction-to-down, .list-parameters__direction-to-up {
+  opacity: 20%;
+}
+
+.list-parameters__direction-to-down:hover, .list-parameters__direction-to-up:hover {
+  opacity: 100%;
+}
+
+.list-parameters__direction-to-up:active .list-parameters__direction-to-up-svg path {
+  fill: #231f20;
+}
+
+.list-parameters__direction-to-down:active .list-parameters__direction-to-down-svg path {
+  fill:  #231f20;
+}
+
+.list-parameters_direction-active {
+  opacity: 100%;
+}
+
+.list-parameters_direction-active path {
+  fill: #231f20;
+}
+
+
+
+
 
 
 

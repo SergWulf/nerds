@@ -91,11 +91,19 @@
     <div class="catalog-sorting">
       <h2 class="catalog-sorting__header">Сортировать</h2>
       <ul class="catalog-sorting__list-parameters list-parameters">
-        <li class="list-parameters__item"><a class="list-parameters__price" href="#">По цене</a></li>
+        <li class="list-parameters__item"><a class="list-parameters__price list-parameters_active-item" href="#">По цене</a></li>
         <li class="list-parameters__item"><a class="list-parameters__type" href="#">По типу</a></li>
         <li class="list-parameters__item"><a class="list-parameters__name" href="#">По названию</a></li>
-        <li class="list-parameters__item"><a class="list-parameters__direction-to-down" href="#"></a></li>
-        <li class="list-parameters__item"><a class="list-parameters__direction-to-up" href="#"></a></li>
+        <li class="list-parameters__item">
+          <a class="list-parameters__direction-to-down list-parameters_direction-active" href="#">
+            <svg class="list-parameters__direction-to-down-svg" xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#a6a6a6" d="M5.5 10L0 0h11"/></svg>
+          </a>
+        </li>
+        <li class="list-parameters__item">
+          <a class="list-parameters__direction-to-up" href="#">
+            <svg class="list-parameters__direction-to-up-svg" xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#a6a6a6" d="M5.5 0L0 10h11z"/></svg>
+          </a>
+        </li>
       </ul>
     </div>
     <div class="catalog-content">
@@ -161,7 +169,7 @@
     </div>
     <div class="catalog-breadcrumbs">
       <ul class="catalog-breadcrumbs__list list-breadcrumbs">
-        <li class="list-breadcrumbs__item"><a class="list-breadcrumbs__first" href="#">1</a></li>
+        <li class="list-breadcrumbs__item"><a class="list-breadcrumbs__first list-breadcrumbs_active-item" href="#">1</a></li>
         <li class="list-breadcrumbs__item"><a class="list-breadcrumbs__second" href="#">2</a></li>
         <li class="list-breadcrumbs__item"><a class="list-breadcrumbs__third" href="#">3</a></li>
         <li class="list-breadcrumbs__item"><a class="list-breadcrumbs__next" href="#">Следующая</a></li>
